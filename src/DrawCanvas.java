@@ -12,15 +12,17 @@ import javafx.stage.Stage;
  * @web http://java-buddy.blogspot.com/
  * 
  * Fonte: https://stackoverflow.com/questions/43429251/how-to-draw-a-continuous-line-with-mouse-on-javafx-canvas
- * 
+ *
+ * TODO: Refactoring...
  * TODO: Criar botão e abrir diálogo para mudar a cor da caneta
  * TODO: Criar desenho com base em linhas e clicks do mouse
  * TODO: Criar botão para salvar a imagem
  * 
- * Referência: Java Como Programar, Deitel
+ * Referência: Java Como Programar, Deitel - Cap 13 Java FX GUI: Part 2
  * Referência: https://docs.oracle.com/javafx/2/canvas/jfxpub-canvas.htm
  * 
  */
+
 public class DrawCanvas extends Application {
 
     @Override
@@ -66,13 +68,15 @@ public class DrawCanvas extends Application {
         primaryStage.setTitle("java-buddy.blogspot.com");
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
+        
+    } //start
 
     public static void main(String[] args) {
         launch(args);
-    }
+    } //main
 
     private void initDraw(GraphicsContext gc){
+    	
         double canvasWidth = gc.getCanvas().getWidth();
         double canvasHeight = gc.getCanvas().getHeight();
 
@@ -91,6 +95,6 @@ public class DrawCanvas extends Application {
         gc.setStroke(Color.BLUE);
         gc.setLineWidth(1);
 
-    }
+    } //initDraw
 
-}
+} //DrawCanvas
