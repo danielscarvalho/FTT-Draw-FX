@@ -1,3 +1,6 @@
+package br.cefsa.ftt.ec;
+
+
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -20,6 +23,7 @@ import javafx.stage.Stage;
  * 
  * Referência: Java Como Programar, Deitel - Cap 13 Java FX GUI: Part 2
  * Referência: https://docs.oracle.com/javafx/2/canvas/jfxpub-canvas.htm
+ * Referência: https://docs.oracle.com/javafx/2/text/jfxpub-text.htm
  * 
  */
 
@@ -64,7 +68,7 @@ public class DrawCanvas extends Application {
 
         StackPane root = new StackPane();
         root.getChildren().add(canvas);
-        Scene scene = new Scene(root, 400, 400);
+        Scene scene = new Scene(root, 800, 600);
         primaryStage.setTitle("java-buddy.blogspot.com");
         primaryStage.setScene(scene);
         primaryStage.show();
